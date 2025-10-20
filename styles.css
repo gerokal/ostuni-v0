@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --background: #faf9f6;
+  --foreground: #1a1a1a;
+  --muted: #6b6b6b;
+  --neutral-light: #c4c4c4;
+  --neutral-dark: #2a2a2a;
+  --dark-blue: #1c2833;
+  --accent: #c9a961;
+  --accent-hover: #b89850;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.font-serif {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-sans {
+  font-family: "Inter", sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neutral-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-hover);
+}
+
+/* Parallax Effect */
+.parallax-bg {
+  will-change: transform;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar Scrolled State */
+.navbar-scrolled {
+  background-color: var(--dark-blue) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-scrolled #nav-content {
+  height: 4rem !important;
+}
+
+/* Added styles for logo positioning */
+#logo-sticky {
+  pointer-events: none;
+}
+
+#logo-sticky.opacity-100 {
+  pointer-events: auto;
+}
+
+/* Body No Scroll */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Utility Classes */
+.bg-background {
+  background-color: var(--background);
+}
+
+.bg-neutral-dark {
+  background-color: var(--neutral-dark);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-accent-hover:hover {
+  background-color: var(--accent-hover);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.text-neutral-light {
+  color: var(--neutral-light);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.border-neutral-light {
+  border-color: var(--neutral-light);
+}
+
+/* Logo transition and sizing */
+.logo-transition {
+  transition: opacity 220ms ease, height 220ms ease, max-height 220ms ease;
+  display: block;
+}
+
+/* Responsive image handling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive background images */
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-image: url('images/hero-768w.webp') !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .parallax-bg {
+    background-image: url('images/hero-1280w.webp') !important;
+  }
+}
+
+@media (min-width: 1281px) {
+  .parallax-bg {
+    background-image: url('images/hero-1920w.webp') !important;
+  }
+}
+
+/* Logo wrapper to handle vertical centering in sticky nav */
+.logo-wrapper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* When navbar is sticky, ensure logo wrapper keeps logo vertically centered
+   and the logo images don't exceed 64px */
+.navbar-sticky .logo-wrapper {
+  height: 60px; /* keep navbar logo area compact */
+}
+
+.navbar-sticky .logo-wrapper .logo-img {
+  max-height: 60px;
+  height: auto;
+}
+
+/* Background image classes */
+.hero-bg {
+  background-image: url('images/hero-1920w.webp');
+}
+
+.card1-bg {
+  background-image: url('images/card1-1920w.webp');
+}
+
+.card2-bg {
+  background-image: url('images/location.png');
+}
+
+.card3-bg {
+  background-image: url('images/garden.webp');
+}

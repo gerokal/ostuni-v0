@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostuni Restaurant - Authentic Italian Cuisine in Putney</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="images/hero-1920w.webp" as="image" type="image/webp">
+    <link rel="preload" href="images/card1-1920w.webp" as="image" type="image/webp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans text-foreground bg-background">
+    <!-- Navigation -->
+    <nav id="navbar" class="absolute top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-24 lg:h-28" id="nav-content">
+                <!-- Hamburger Menu -->
+                <button id="menu-toggle" class="text-white hover:text-accent transition-colors z-50"
+                    aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+                <!-- Logo -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 logo-wrapper">
+                    <a href="#" id="logo-initial"
+                        class="text-white font-serif text-2xl lg:text-3xl font-semibold tracking-wider"><img src="images/logo-ostuni.png" alt="Ostuni logo" class="h-32 logo-img logo-transition"></a>
+                    <a href="#" id="logo-sticky"
+                        class="text-white font-serif text-2xl lg:text-3xl font-semibold tracking-wider opacity-0 absolute top-0 left-0"><img src="images/logo-ostuni-ln.png" alt="Ostuni logo" class="logo-img logo-transition"></a>
+                </div>
+
+                <!-- Reservations Button -->
+                <a href="#reservations"
+                    class="bg-accent text-background px-6 py-2.5 rounded-sm hover:bg-accent-hover transition-colors font-medium text-sm tracking-wide">
+                    Reservations
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Menu -->
+    <div id="side-menu"
+        class="fixed inset-y-0 left-0 w-80 bg-dark-blue transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+        <div class="flex flex-col h-full pt-32 px-8">
+            <nav class="flex flex-col space-y-6">
+                <a href="#home"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Home</a>
+                <a href="#about"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">About</a>
+                <a href="#menu"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Menu</a>
+                <a href="#events"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Private
+                    Events</a>
+                <a href="#contact"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Contact</a>
+            </nav>
+
+            <div class="mt-auto pb-12">
+                <p class="text-neutral-light text-sm mb-2">Visit Us</p>
+                <p class="text-white text-sm">123 Putney High Street<br>London, SW15 1SL</p>
+                <p class="text-white text-sm mt-4">020 1234 5678</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen overflow-hidden" role="banner">
+        <div class="parallax-bg absolute inset-0 bg-cover bg-center hero-bg" aria-label="Restaurant interior">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative h-full flex items-end">
+            <div class="container mx-auto px-4 lg:px-8 pb-16 lg:pb-24">
+                <div class="max-w-2xl">
+                    <p class="text-accent text-sm lg:text-base font-medium tracking-widest mb-3 uppercase">Located in
+                        Putney</p>
+                    <h1 class="text-white font-serif text-5xl lg:text-7xl font-light leading-tight text-balance">
+                        Authentic Italian Cuisine
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Cards Section -->
+    <section class="py-20 lg:py-32 bg-neutral-dark" role="main">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Card 1 -->
+                <div class="group relative h-96 overflow-hidden rounded-sm cursor-pointer" role="button" tabindex="0" aria-label="Food & Drinks section">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 card1-bg"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <h3 class="text-white font-serif text-3xl font-light mb-2">Food & Drinks</h3>
+                        <p class="text-neutral-light text-sm">Discover our seasonal menu crafted with the finest Italian
+                            ingredients</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative h-96 overflow-hidden rounded-sm cursor-pointer" role="button" tabindex="0" aria-label="Our Location section">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 card2-bg"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <h3 class="text-white font-serif text-3xl font-light mb-2">Our Location</h3>
+                        <p class="text-neutral-light text-sm">Nestled in the heart of Putney, easily accessible and
+                            welcoming</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative h-96 overflow-hidden rounded-sm cursor-pointer" role="button" tabindex="0" aria-label="Our Garden section">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 card3-bg"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <h3 class="text-white font-serif text-3xl font-light mb-2">Our Garden</h3>
+                        <p class="text-neutral-light text-sm">Dine al fresco in our enchanting garden space under the
+                            stars</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our History Section -->
+    <section id="about" class="py-20 lg:py-32 bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Text Content -->
+                <div class="order-2 lg:order-1">
+                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Our Story</p>
+                    <h2
+                        class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                        A Legacy of Italian Excellence
+                    </h2>
+                    <div class="space-y-4 text-muted leading-relaxed">
+                        <p>
+                            Ostuni was born from a passion for authentic Italian cuisine and a desire to bring the
+                            warmth of Italian hospitality to Putney. Named after the beautiful white city in Puglia, our
+                            restaurant embodies the same timeless elegance and charm.
+                        </p>
+                        <p>
+                            For over a decade, we've been serving traditional recipes passed down through generations,
+                            using only the finest ingredients sourced from Italy and local artisan producers. Every dish
+                            tells a story of heritage, craftsmanship, and love.
+                        </p>
+                        <p>
+                            Our commitment to excellence extends beyond the plate. From our carefully curated wine list
+                            to our attentive service, we strive to create memorable experiences that transport you to
+                            the heart of Italy.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="order-1 lg:order-2">
+                    <div class="relative h-96 lg:h-[600px] rounded-sm overflow-hidden">
+                        <img src="images/history.jpeg" alt="Our History"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 lg:py-32 bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Our Menu</p>
+                <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                    Authentic Italian Flavors
+                </h2>
+                <p class="text-muted max-w-2xl mx-auto leading-relaxed">
+                    Experience the true taste of Italy with our carefully crafted menu featuring traditional recipes and the finest ingredients.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Appetizers -->
+                <div class="text-center">
+                    <h3 class="text-foreground font-serif text-2xl font-light mb-6">Appetizers</h3>
+                    <div class="space-y-4 text-left">
+                        <div class="border-b border-neutral-light/20 pb-4">
+                            <h4 class="text-foreground font-medium">Bruschetta al Pomodoro</h4>
+                            <p class="text-muted text-sm">Fresh tomatoes, basil, and extra virgin olive oil</p>
+                        </div>
+                        <div class="border-b border-neutral-light/20 pb-4">
+                            <h4 class="text-foreground font-medium">Antipasto Misto</h4>
+                            <p class="text-muted text-sm">Selection of cured meats, cheeses, and olives</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="text-center">
+                    <h3 class="text-foreground font-serif text-2xl font-light mb-6">Main Courses</h3>
+                    <div class="space-y-4 text-left">
+                        <div class="border-b border-neutral-light/20 pb-4">
+                            <h4 class="text-foreground font-medium">Spaghetti Carbonara</h4>
+                            <p class="text-muted text-sm">Traditional Roman pasta with eggs, cheese, and pancetta</p>
+                        </div>
+                        <div class="border-b border-neutral-light/20 pb-4">
+                            <h4 class="text-foreground font-medium">Osso Buco alla Milanese</h4>
+                            <p class="text-muted text-sm">Braised veal shanks with saffron risotto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="text-center">
+                    <h3 class="text-foreground font-serif text-2xl font-light mb-6">Desserts</h3>
+                    <div class="space-y-4 text-left">
+                        <div class="border-b border-neutral-light/20 pb-4">
+                            <h4 class="text-foreground font-medium">Tiramisu</h4>
+                            <p class="text-muted text-sm">Classic Italian dessert with coffee and mascarpone</p>
+                        </div>
+                        <div class="border-b border-neutral-light/20 pb-4">
+                            <h4 class="text-foreground font-medium">Panna Cotta</h4>
+                            <p class="text-muted text-sm">Vanilla custard with berry compote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Events Section -->
+    <section id="events" class="py-20 lg:py-32 bg-neutral-dark">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Image -->
+                <div>
+                    <div class="relative h-96 lg:h-[600px] rounded-sm overflow-hidden">
+                        <img src="images/events.jpeg" alt="Private Events"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Celebrations</p>
+                    <h2 class="text-white font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                        Host Your Special Moments
+                    </h2>
+                    <div class="space-y-4 text-neutral-light leading-relaxed">
+                        <p>
+                            Whether you're planning an intimate gathering or a grand celebration, Ostuni provides the
+                            perfect setting for your private events. Our dedicated team will work with you to create a
+                            bespoke experience tailored to your vision.
+                        </p>
+                        <p>
+                            Our private dining spaces can accommodate groups from 10 to 60 guests, offering an exclusive
+                            atmosphere with personalized menus crafted by our head chef. From corporate dinners to
+                            wedding receptions, we handle every detail with care.
+                        </p>
+                        <p>
+                            Experience the magic of Italian hospitality in an intimate setting, where exceptional food
+                            meets impeccable service. Let us make your celebration truly unforgettable.
+                        </p>
+                    </div>
+                    <a href="#contact"
+                        class="inline-block mt-8 bg-accent text-background px-8 py-3 rounded-sm hover:bg-accent-hover transition-colors font-medium tracking-wide">
+                        Enquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="py-20 lg:py-32 bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Book a Table</p>
+                    <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                        Reserve Your Experience
+                    </h2>
+                    <p class="text-muted max-w-2xl mx-auto leading-relaxed">
+                        Join us for an unforgettable dining experience. Book your table today and let us create memories that will last a lifetime.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-foreground font-serif text-2xl font-light mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-foreground font-medium mb-2">Address</h4>
+                                <p class="text-muted">123 Putney High Street<br>London, SW15 1SL</p>
+                            </div>
+                            <div>
+                                <h4 class="text-foreground font-medium mb-2">Phone</h4>
+                                <p class="text-muted">020 1234 5678</p>
+                            </div>
+                            <div>
+                                <h4 class="text-foreground font-medium mb-2">Email</h4>
+                                <p class="text-muted">reservations@ostuni-restaurant.com</p>
+                            </div>
+                            <div>
+                                <h4 class="text-foreground font-medium mb-2">Opening Hours</h4>
+                                <p class="text-muted">Tuesday - Sunday: 6:00 PM - 11:00 PM<br>Closed Mondays</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reservation Form -->
+                    <div>
+                        <h3 class="text-foreground font-serif text-2xl font-light mb-6">Make a Reservation</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-foreground text-sm font-medium mb-2">Full Name</label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full px-4 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-foreground text-sm font-medium mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required
+                                        class="w-full px-4 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="date" class="block text-foreground text-sm font-medium mb-2">Date</label>
+                                    <input type="date" id="date" name="date" required
+                                        class="w-full px-4 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground focus:outline-none focus:border-accent transition-colors">
+                                </div>
+                                <div>
+                                    <label for="time" class="block text-foreground text-sm font-medium mb-2">Time</label>
+                                    <select id="time" name="time" required
+                                        class="w-full px-4 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground focus:outline-none focus:border-accent transition-colors">
+                                        <option value="">Select time</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                        <option value="21:30">9:30 PM</option>
+                                        <option value="22:00">10:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="guests" class="block text-foreground text-sm font-medium mb-2">Number of Guests</label>
+                                <select id="guests" name="guests" required
+                                    class="w-full px-4 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground focus:outline-none focus:border-accent transition-colors">
+                                    <option value="">Select number of guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-foreground text-sm font-medium mb-2">Special Requests (Optional)</label>
+                                <textarea id="message" name="message" rows="3"
+                                    class="w-full px-4 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors resize-none"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-accent text-background px-8 py-3 rounded-sm hover:bg-accent-hover transition-colors font-medium tracking-wide">
+                                Book Table
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="contact" class="py-20 lg:py-32 bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-4 text-balance">
+                    Stay Connected
+                </h2>
+                <p class="text-muted mb-8 leading-relaxed">
+                    Subscribe to our newsletter for exclusive offers, seasonal menu updates, and invitations to special
+                    events.
+                </p>
+
+                <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email" required
+                        class="flex-1 px-6 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors">
+                    <button type="submit"
+                        class="bg-accent text-background px-8 py-3 rounded-sm hover:bg-accent-hover transition-colors font-medium tracking-wide whitespace-nowrap">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white">
+        <div class="container mx-auto px-4 lg:px-8 py-12 lg:py-16">
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-8">
+                <!-- Logo -->
+                <div>
+                    <a href="#" class="font-serif text-3xl font-semibold tracking-wider">OSTUNI</a>
+                    <p class="text-neutral-light text-sm mt-2">Authentic Italian Cuisine</p>
+                </div>
+
+                <!-- Quick Links -->
+                <nav class="flex flex-wrap gap-x-8 gap-y-4">
+                    <a href="#home" class="text-neutral-light hover:text-accent transition-colors text-sm">Home</a>
+                    <a href="#about" class="text-neutral-light hover:text-accent transition-colors text-sm">About</a>
+                    <a href="#menu" class="text-neutral-light hover:text-accent transition-colors text-sm">Menu</a>
+                    <a href="#events" class="text-neutral-light hover:text-accent transition-colors text-sm">Private
+                        Events</a>
+                    <a href="#contact"
+                        class="text-neutral-light hover:text-accent transition-colors text-sm">Contact</a>
+                    <a href="#reservations"
+                        class="text-neutral-light hover:text-accent transition-colors text-sm">Reservations</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-neutral-light/10">
+            <div class="container mx-auto px-4 lg:px-8 py-6">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-neutral-light">
+                    <p>&copy; 2025 Ostuni Restaurant. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-accent transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
