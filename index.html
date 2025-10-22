@@ -67,22 +67,26 @@
                     class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Contact</a>
             </nav>
 
-            <div class="mt-auto pb-12">
+            <div class="mt-auto pb-20">
                 <p class="text-neutral-light text-sm mb-2">Visit Us</p>
                 <p class="text-white text-sm">123 Putney High Street<br>London, SW15 1SL</p>
                 <p class="text-white text-sm mt-4">020 1234 5678</p>
             </div>
+            <a href="#reservations"
+                class="side-menu-reservations-btn">
+                Reservations
+            </a>
         </div>
     </div>
 
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen overflow-hidden" role="banner">
+    <section id="home" class="relative h-screen overflow-hidden min-h-screen pb-16 supports-[height:100dvh]:min-h-dvh supports-[height:100dvh]:pb-8 md:pb-0" role="banner">
         <div class="parallax-bg absolute inset-0 bg-cover bg-center hero-bg" aria-label="Restaurant interior">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
 
         <div class="relative h-full flex items-end">
-            <div class="container mx-auto px-4 lg:px-8 pb-16 lg:pb-24">
+            <div class="container mx-auto px-4 lg:px-8 pb-20 lg:pb-24">
                 <div class="max-w-2xl">
                     <p class="text-accent text-sm lg:text-base font-medium tracking-widest mb-3 uppercase">Located in
                         Putney</p>
@@ -452,7 +456,7 @@
     </footer>
 
     <!-- Mobile Fixed Reservations Button -->
-    <a href="#reservations" class="mobile-reservations-btn md:hidden">
+    <a href="#reservations" class="mobile-reservations-btn md:hidden fixed bottom-0 left-0 right-0 p-4 md:relative md:p-0">
         Book a Table
     </a>
 

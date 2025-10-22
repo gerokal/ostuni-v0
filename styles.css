@@ -191,12 +191,42 @@ img {
   background-image: url('images/garden.webp');
 }
 
+.side-menu-reservations-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+/* Sticky navbar styles when side menu is open */
+body:has(#side-menu.translate-x-0) .navbar-scrolled {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+body:has(#side-menu.translate-x-0) #logo-sticky {
+  display: none;
+}
+/* Hide top navbar reservations button when side menu is open */
+body:has(#side-menu.translate-x-0) nav a[href="#reservations"] {
+  display: none;
+}
 /* Mobile fixed reservations button */
 @media (max-width: 768px) {
   /* Hide the top navbar reservations button on mobile */
   nav a[href="#reservations"] {
     display: none;
   }
+  
   
   .mobile-reservations-btn {
     position: fixed;
@@ -219,9 +249,32 @@ img {
     background-color: var(--accent-hover);
     color: var(--background);
   }
+    /* Increase side menu z-index to overlap all content on mobile */
+    #side-menu {
+      z-index: 9998;
+    }
+    /* Navbar on top to avoid close icon being hidden behind side menu */
+    #navbar {
+      z-index: 9999;
+    }
+    
+    /* Hide initial logo when side menu is open on mobile */
+    body:has(#side-menu.translate-x-0) #logo-initial {
+      display: none;
+    }
+    /* Sticky navbar styles when side menu is open */
+    body:has(#side-menu.translate-x-0) .navbar-scrolled {
+      background-color: transparent !important;
+      box-shadow: none;
+    }
+    /* Hide reservations button in mobile view when side menu is open */
+    body:has(#side-menu.translate-x-0) .mobile-reservations-btn {
+      display: none;
+    }
   
   /* Add bottom padding to body to prevent content from being hidden behind fixed button */
   body {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
+
 }
