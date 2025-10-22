@@ -190,3 +190,24 @@ document.addEventListener("keydown", (e) => {
     }
   }
 })
+
+// Footer accordion functionality
+const footerAccordionToggle = document.getElementById("footer-accordion-toggle")
+const footerAccordionContent = document.getElementById("footer-accordion-content")
+const footerAccordionIcon = document.getElementById("footer-accordion-icon")
+
+if (footerAccordionToggle && footerAccordionContent && footerAccordionIcon) {
+  footerAccordionToggle.addEventListener("click", () => {
+    const isOpen = !footerAccordionContent.classList.contains("hidden")
+    
+    if (isOpen) {
+      // Close accordion
+      footerAccordionContent.classList.add("hidden")
+      footerAccordionIcon.style.transform = "rotate(0deg)"
+    } else {
+      // Open accordion
+      footerAccordionContent.classList.remove("hidden")
+      footerAccordionIcon.style.transform = "rotate(180deg)"
+    }
+  })
+}

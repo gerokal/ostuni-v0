@@ -34,9 +34,9 @@
 
                 <!-- Logo -->
                 <div class="absolute left-1/2 transform -translate-x-1/2 logo-wrapper">
-                    <a href="#" id="logo-initial"
+                    <a href="/" id="logo-initial"
                         class="text-white font-serif text-2xl lg:text-3xl font-semibold tracking-wider"><img src="images/logo-ostuni.png" alt="Ostuni logo" class="h-32 mt-12 logo-img logo-transition"></a>
-                    <a href="#" id="logo-sticky"
+                    <a href="/" id="logo-sticky"
                         class="text-white font-serif text-2xl lg:text-3xl font-semibold tracking-wider opacity-0 absolute"><img src="images/logo-ostuni-ln.png" alt="Ostuni logo" class="h-16 py-2 logo-img logo-transition"></a>
                 </div>
 
@@ -69,12 +69,13 @@
 
             <div class="mt-auto pb-20">
                 <p class="text-neutral-light text-sm mb-2">Visit Us</p>
-                <p class="text-white text-sm">123 Putney High Street<br>London, SW15 1SL</p>
-                <p class="text-white text-sm mt-4">020 1234 5678</p>
+                <p class="text-white text-sm">277 Upper Richmond Rd</p>
+                <p class="text-white text-sm">London, SW15 6SP</p>
+                <p class="text-white text-sm mt-4">020 8788 7733</p>
             </div>
             <a href="#reservations"
                 class="side-menu-reservations-btn">
-                Reservations
+                Book a Table
             </a>
         </div>
     </div>
@@ -419,32 +420,62 @@
     <!-- Footer -->
     <footer class="bg-dark-blue text-white">
         <div class="container mx-auto px-4 lg:px-8 py-12 lg:py-16">
-            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-8">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-8 mb-8">
                 <!-- Logo -->
-                <div>
-                    <a href="#" class="font-serif text-3xl font-semibold tracking-wider">OSTUNI</a>
-                    <p class="text-neutral-light text-sm mt-2">Authentic Italian Cuisine</p>
+                <div class="flex flex-col items-center text-wrap">
+                    <a href="#" class="font-serif text-3xl font-semibold tracking-wider">
+                        <img src="images/logo-ostuni.png" alt="Ostuni logo" class="h-28">
+                    </a>
+                    <p class="text-neutral-light text-sm mt-2 italic">A Legacy of Italian Excellence</p>
+                    <hr class="w-full border-neutral-light/10 my-4">
+                    <p class="text-neutral-light text-sm">277 Upper Richmond Rd</p>
+                    <p class="text-neutral-light text-sm">London, SW15 6SP</p>
+                    <p class="text-neutral-light text-sm mt-2 font-bold">020 8788 7733</p>
                 </div>
 
                 <!-- Quick Links -->
-                <nav class="flex flex-wrap gap-x-8 gap-y-4">
-                    <a href="#home" class="text-neutral-light hover:text-accent transition-colors text-sm">Home</a>
-                    <a href="#about" class="text-neutral-light hover:text-accent transition-colors text-sm">About</a>
-                    <a href="#menu" class="text-neutral-light hover:text-accent transition-colors text-sm">Menu</a>
-                    <a href="#events" class="text-neutral-light hover:text-accent transition-colors text-sm">Private
-                        Events</a>
-                    <a href="#contact"
-                        class="text-neutral-light hover:text-accent transition-colors text-sm">Contact</a>
-                    <a href="#reservations"
-                        class="text-neutral-light hover:text-accent transition-colors text-sm">Reservations</a>
-                </nav>
+                <div class="w-3/5 md:w-auto">
+                    <!-- Mobile Accordion -->
+                    <div class="md:hidden ">
+                        <hr class="border-neutral-light/10 my-2 w-full">
+                        <button id="footer-accordion-toggle" class="flex items-center justify-between w-full text-neutral-light uppercase text-sm py-2">
+                            <span>Quick Links &nbsp;&nbsp;</span>
+                            <svg id="footer-accordion-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <hr class="border-neutral-light/10 my-2 w-full">
+                        <div id="footer-accordion-content" class="hidden mt-2 text-center md:text-right space-y-2">
+                            <a href="#home" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Home</a>
+                            <a href="#about" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">About</a>
+                            <a href="#menu" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Menu</a>
+                            <a href="#events" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Private Events</a>
+                            <a href="#contact" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Contact</a>
+                            <a href="#reservations" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Reservations</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Desktop Links -->
+                    <nav class="hidden md:flex flex-wrap flex-col text-right gap-x-8 gap-y-2">
+                        <p class="text-neutral-light uppercase text-sm">Quick Links</p>
+                        <a href="#home" class="text-neutral-light hover:text-accent transition-colors text-sm">Home</a>
+                        <a href="#about" class="text-neutral-light hover:text-accent transition-colors text-sm">About</a>
+                        <a href="#menu" class="text-neutral-light hover:text-accent transition-colors text-sm">Menu</a>
+                        <a href="#events" class="text-neutral-light hover:text-accent transition-colors text-sm">Private
+                            Events</a>
+                        <a href="#contact"
+                            class="text-neutral-light hover:text-accent transition-colors text-sm">Contact</a>
+                        <a href="#reservations"
+                            class="text-neutral-light hover:text-accent transition-colors text-sm">Reservations</a>
+                    </nav>
+                </div>
             </div>
         </div>
 
         <!-- Bottom Bar -->
         <div class="border-t border-neutral-light/10">
-            <div class="container mx-auto px-4 lg:px-8 py-6">
-                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-neutral-light">
+            <div class="container mx-auto px-4 lg:px-8 py-4">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-neutral-light">
                     <p>&copy; 2025 Ostuni Restaurant. All rights reserved.</p>
                     <div class="flex gap-6">
                         <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>

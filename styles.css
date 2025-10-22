@@ -274,7 +274,7 @@ body:has(#side-menu.translate-x-0) nav a[href="#reservations"] {
   
   /* Add bottom padding to body to prevent content from being hidden behind fixed button */
   body {
-    padding-bottom: 5rem;
+    padding-bottom: 3.5rem;
   }
 
 }
