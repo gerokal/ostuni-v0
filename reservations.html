@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ostuni Restaurant - Authentic Italian Cuisine in Putney</title>
+    <title>Reservations - Ostuni Restaurant | Authentic Italian Cuisine in Putney</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="preload" href="images/hero-1920w.webp" as="image" type="image/webp">
-    <link rel="preload" href="images/card1-1920w.webp" as="image" type="image/webp">
+    <link rel="preload" href="images/garden.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -81,212 +81,25 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen overflow-hidden min-h-screen pb-16 supports-[height:100dvh]:min-h-dvh supports-[height:100dvh]:pb-8 md:pb-0" role="banner">
-        <div class="parallax-bg absolute inset-0 bg-cover bg-center hero-bg" aria-label="Restaurant interior">
+    <section id="reservations-hero" class="relative h-screen overflow-hidden min-h-screen pb-16 supports-[height:100dvh]:min-h-dvh supports-[height:100dvh]:pb-8 md:pb-0" role="banner">
+        <div class="parallax-bg absolute inset-0 bg-cover bg-center card3-bg" aria-label="Restaurant garden">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
 
         <div class="relative h-full flex items-end">
             <div class="container mx-auto px-4 lg:px-8 pb-20 lg:pb-24">
                 <div class="max-w-2xl">
-                    <p class="text-accent text-sm lg:text-base font-medium tracking-widest mb-3 uppercase">Located in
-                        Putney</p>
+                    <p class="text-accent text-sm lg:text-base font-medium tracking-widest mb-3 uppercase">Book a Table</p>
                     <h1 class="text-white font-serif text-5xl lg:text-7xl font-light leading-tight text-balance">
-                        Authentic Italian Cuisine
+                        Reserve Your Experience
                     </h1>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Feature Cards Section -->
-    <section class="py-20 lg:py-32 bg-neutral-dark" role="main">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-                <!-- Card 1 -->
-                <div class="group relative h-96 overflow-hidden rounded-sm cursor-pointer" role="button" tabindex="0" aria-label="Food & Drinks section">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 card1-bg"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-8">
-                        <h3 class="text-white font-serif text-3xl font-light mb-2">Food & Drinks</h3>
-                        <p class="text-neutral-light text-sm">Discover our seasonal menu crafted with the finest Italian
-                            ingredients</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="group relative h-96 overflow-hidden rounded-sm cursor-pointer" role="button" tabindex="0" aria-label="Our Location section">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 card2-bg"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-8">
-                        <h3 class="text-white font-serif text-3xl font-light mb-2">Our Location</h3>
-                        <p class="text-neutral-light text-sm">Nestled in the heart of Putney, easily accessible and
-                            welcoming</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="group relative h-96 overflow-hidden rounded-sm cursor-pointer" role="button" tabindex="0" aria-label="Our Garden section">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 card3-bg"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-8">
-                        <h3 class="text-white font-serif text-3xl font-light mb-2">Our Garden</h3>
-                        <p class="text-neutral-light text-sm">Dine al fresco in our enchanting garden space under the
-                            stars</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our History Section -->
-    <section id="about" class="py-20 lg:py-32 bg-background">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- Text Content -->
-                <div class="order-2 lg:order-1">
-                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Our Story</p>
-                    <h2
-                        class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
-                        A Legacy of Italian Excellence
-                    </h2>
-                    <div class="space-y-4 text-muted leading-relaxed">
-                        <p>
-                            Ostuni was born from a passion for authentic Italian cuisine and a desire to bring the
-                            warmth of Italian hospitality to Putney. Named after the beautiful white city in Puglia, our
-                            restaurant embodies the same timeless elegance and charm.
-                        </p>
-                        <p>
-                            For over a decade, we've been serving traditional recipes passed down through generations,
-                            using only the finest ingredients sourced from Italy and local artisan producers. Every dish
-                            tells a story of heritage, craftsmanship, and love.
-                        </p>
-                        <p>
-                            Our commitment to excellence extends beyond the plate. From our carefully curated wine list
-                            to our attentive service, we strive to create memorable experiences that transport you to
-                            the heart of Italy.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Image -->
-                <div class="order-1 lg:order-2">
-                    <div class="relative h-96 lg:h-[600px] rounded-sm overflow-hidden">
-                        <img src="images/history.jpeg" alt="Our History"
-                            class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="py-20 lg:py-32 bg-neutral-dark">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="text-center mb-16">
-                <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Our Menu</p>
-                <h2 class="text-white font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
-                    Authentic Italian Flavors
-                </h2>
-                <p class="text-neutral-light max-w-2xl mx-auto leading-relaxed">
-                    Experience the true taste of Italy with our carefully crafted menu featuring traditional recipes and the finest ingredients.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Appetizers -->
-                <div class="text-center">
-                    <h3 class="text-white font-serif text-2xl font-light mb-6">Appetizers</h3>
-                    <div class="space-y-4 text-left">
-                        <div class="border-b border-neutral-light/20 pb-4">
-                            <h4 class="text-white font-medium">Bruschetta al Pomodoro</h4>
-                            <p class="text-neutral-light text-sm">Fresh tomatoes, basil, and extra virgin olive oil</p>
-                        </div>
-                        <div class="border-b border-neutral-light/20 pb-4">
-                            <h4 class="text-white font-medium">Antipasto Misto</h4>
-                            <p class="text-neutral-light text-sm">Selection of cured meats, cheeses, and olives</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Main Courses -->
-                <div class="text-center">
-                    <h3 class="text-white font-serif text-2xl font-light mb-6">Main Courses</h3>
-                    <div class="space-y-4 text-left">
-                        <div class="border-b border-neutral-light/20 pb-4">
-                            <h4 class="text-white font-medium">Spaghetti Carbonara</h4>
-                            <p class="text-neutral-light text-sm">Traditional Roman pasta with eggs, cheese, and pancetta</p>
-                        </div>
-                        <div class="border-b border-neutral-light/20 pb-4">
-                            <h4 class="text-white font-medium">Osso Buco alla Milanese</h4>
-                            <p class="text-neutral-light text-sm">Braised veal shanks with saffron risotto</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Desserts -->
-                <div class="text-center">
-                    <h3 class="text-white font-serif text-2xl font-light mb-6">Desserts</h3>
-                    <div class="space-y-4 text-left">
-                        <div class="border-b border-neutral-light/20 pb-4">
-                            <h4 class="text-white font-medium">Tiramisu</h4>
-                            <p class="text-neutral-light text-sm">Classic Italian dessert with coffee and mascarpone</p>
-                        </div>
-                        <div class="border-b border-neutral-light/20 pb-4">
-                            <h4 class="text-white font-medium">Panna Cotta</h4>
-                            <p class="text-neutral-light text-sm">Vanilla custard with berry compote</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Private Events Section -->
-    <section id="events" class="py-20 lg:py-32 bg-background">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                <!-- Image -->
-                <div>
-                    <div class="relative h-96 lg:h-[600px] rounded-sm overflow-hidden">
-                        <img src="images/events.jpeg" alt="Private Events"
-                            class="w-full h-full object-cover" loading="lazy">
-                    </div>
-                </div>
-
-                <!-- Text Content -->
-                <div>
-                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Celebrations</p>
-                    <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
-                        Host Your Special Moments
-                    </h2>
-                    <div class="space-y-4 text-muted leading-relaxed">
-                        <p>
-                            Whether you're planning an intimate gathering or a grand celebration, Ostuni provides the
-                            perfect setting for your private events. Our dedicated team will work with you to create a
-                            bespoke experience tailored to your vision.
-                        </p>
-                        <p>
-                            Our private dining spaces can accommodate groups from 10 to 60 guests, offering an exclusive
-                            atmosphere with personalized menus crafted by our head chef. From corporate dinners to
-                            wedding receptions, we handle every detail with care.
-                        </p>
-                        <p>
-                            Experience the magic of Italian hospitality in an intimate setting, where exceptional food
-                            meets impeccable service. Let us make your celebration truly unforgettable.
-                        </p>
-                    </div>
-                    <a href="#contact"
-                        class="inline-block mt-8 bg-accent text-background px-8 py-3 rounded-sm hover:bg-accent-hover transition-colors font-medium tracking-wide">
-                        Enquire Now
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Reservations Section -->
-    <section id="reservations" class="py-20 lg:py-32 bg-neutral-dark">
+    <section class="py-20 lg:py-32 bg-neutral-dark">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center mb-16">
@@ -396,21 +209,54 @@
         </div>
     </section>
 
+    <!-- Dining Options Section -->
+    <section class="py-20 lg:py-32 bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Dining Options</p>
+                    <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                        Choose Your Perfect Setting
+                    </h2>
+                    <p class="text-muted max-w-2xl mx-auto leading-relaxed">
+                        Whether you prefer an intimate indoor setting or our enchanting garden space, we have the perfect dining experience for you.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="text-center">
+                        <h3 class="text-foreground font-serif text-2xl font-light mb-4">Indoor Dining</h3>
+                        <p class="text-muted leading-relaxed">
+                            Experience the warm, elegant atmosphere of our main dining room with its sophisticated Italian decor and intimate lighting.
+                        </p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <h3 class="text-foreground font-serif text-2xl font-light mb-4">Garden Dining</h3>
+                        <p class="text-muted leading-relaxed">
+                            Dine al fresco in our enchanting garden space, surrounded by beautiful plants and twinkling lights under the stars.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Newsletter Section -->
-    <section id="contact" class="py-20 lg:py-32 bg-background">
+    <section class="py-20 lg:py-32 bg-neutral-dark">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-4 text-balance">
+                <h2 class="text-white font-serif text-4xl lg:text-5xl font-light mb-4 text-balance">
                     Stay Connected
                 </h2>
-                <p class="text-muted mb-8 leading-relaxed">
+                <p class="text-neutral-light mb-8 leading-relaxed">
                     Subscribe to our newsletter for exclusive offers, seasonal menu updates, and invitations to special
                     events.
                 </p>
 
                 <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                     <input type="email" placeholder="Enter your email" required
-                        class="flex-1 px-6 py-3 bg-neutral-dark border border-neutral-light/20 rounded-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors">
+                        class="flex-1 px-6 py-3 bg-background border border-neutral-light/20 rounded-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors">
                     <button type="submit"
                         class="bg-accent text-background px-8 py-3 rounded-sm hover:bg-accent-hover transition-colors font-medium tracking-wide whitespace-nowrap">
                         Subscribe

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Events - Ostuni Restaurant | Authentic Italian Cuisine in Putney</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="images/hero-1920w.webp" as="image" type="image/webp">
+    <link rel="preload" href="images/events.jpeg" as="image" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans text-foreground bg-background">
+    <!-- Navigation -->
+    <nav id="navbar" class="absolute top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-24 lg:h-28" id="nav-content">
+                <!-- Hamburger Menu -->
+                <button id="menu-toggle" class="text-white hover:text-accent transition-colors z-50"
+                    aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+                <!-- Logo -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 logo-wrapper">
+                    <a href="index.html" id="logo-initial"
+                        class="text-white font-serif text-2xl lg:text-3xl font-semibold tracking-wider"><img src="images/logo-ostuni.png" alt="Ostuni logo" class="h-32 mt-12 logo-img logo-transition"></a>
+                    <a href="index.html" id="logo-sticky"
+                        class="text-white font-serif text-2xl lg:text-3xl font-semibold tracking-wider opacity-0 absolute"><img src="images/logo-ostuni-ln.png" alt="Ostuni logo" class="h-16 py-2 logo-img logo-transition"></a>
+                </div>
+
+                <!-- Reservations Button -->
+                <a href="reservations.html"
+                    class="bg-accent text-background px-6 py-2.5 rounded-sm hover:bg-accent-hover transition-colors font-medium text-sm tracking-wide">
+                    Reservations
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Side Menu -->
+    <div id="side-menu"
+        class="fixed inset-y-0 left-0 w-80 bg-dark-blue transform -translate-x-full transition-transform duration-300 ease-in-out z-40">
+        <div class="flex flex-col h-full pt-32 px-8">
+            <nav class="flex flex-col space-y-6">
+                <a href="index.html"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Home</a>
+                <a href="about.html"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">About</a>
+                <a href="menu.html"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Menu</a>
+                <a href="events.html"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Private
+                    Events</a>
+                <a href="contact.html"
+                    class="text-white text-2xl font-serif hover:text-accent transition-colors menu-link">Contact</a>
+            </nav>
+
+            <div class="mt-auto pb-20">
+                <p class="text-neutral-light text-sm mb-2">Visit Us</p>
+                <p class="text-white text-sm">277 Upper Richmond Rd</p>
+                <p class="text-white text-sm">London, SW15 6SP</p>
+                <p class="text-white text-sm mt-4">020 8788 7733</p>
+            </div>
+            <a href="reservations.html"
+                class="side-menu-reservations-btn">
+                Book a Table
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="events-hero" class="relative h-screen overflow-hidden min-h-screen pb-16 supports-[height:100dvh]:min-h-dvh supports-[height:100dvh]:pb-8 md:pb-0" role="banner">
+        <div class="parallax-bg absolute inset-0 bg-cover bg-center" style="background-image: url('images/events.jpeg');" aria-label="Private events">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative h-full flex items-end">
+            <div class="container mx-auto px-4 lg:px-8 pb-20 lg:pb-24">
+                <div class="max-w-2xl">
+                    <p class="text-accent text-sm lg:text-base font-medium tracking-widest mb-3 uppercase">Private Events</p>
+                    <h1 class="text-white font-serif text-5xl lg:text-7xl font-light leading-tight text-balance">
+                        Host Your Special Moments
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Events Section -->
+    <section class="py-20 lg:py-32 bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Image -->
+                <div>
+                    <div class="relative h-96 lg:h-[600px] rounded-sm overflow-hidden">
+                        <img src="images/events.jpeg" alt="Private Events"
+                            class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Celebrations</p>
+                    <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                        Host Your Special Moments
+                    </h2>
+                    <div class="space-y-4 text-muted leading-relaxed">
+                        <p>
+                            Whether you're planning an intimate gathering or a grand celebration, Ostuni provides the
+                            perfect setting for your private events. Our dedicated team will work with you to create a
+                            bespoke experience tailored to your vision.
+                        </p>
+                        <p>
+                            Our private dining spaces can accommodate groups from 10 to 60 guests, offering an exclusive
+                            atmosphere with personalized menus crafted by our head chef. From corporate dinners to
+                            wedding receptions, we handle every detail with care.
+                        </p>
+                        <p>
+                            Experience the magic of Italian hospitality in an intimate setting, where exceptional food
+                            meets impeccable service. Let us make your celebration truly unforgettable.
+                        </p>
+                    </div>
+                    <a href="contact.html"
+                        class="inline-block mt-8 bg-accent text-background px-8 py-3 rounded-sm hover:bg-accent-hover transition-colors font-medium tracking-wide">
+                        Enquire Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types Section -->
+    <section class="py-20 lg:py-32 bg-neutral-dark">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="text-center mb-16">
+                <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Event Types</p>
+                <h2 class="text-white font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                    Perfect for Every Occasion
+                </h2>
+                <p class="text-neutral-light max-w-2xl mx-auto leading-relaxed">
+                    From intimate dinners to grand celebrations, we create memorable experiences for every special moment.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Wedding Receptions -->
+                <div class="text-center">
+                    <h3 class="text-white font-serif text-2xl font-light mb-4">Wedding Receptions</h3>
+                    <p class="text-neutral-light leading-relaxed">
+                        Celebrate your special day with an elegant Italian feast. Our team will ensure every detail is perfect for your unforgettable wedding reception.
+                    </p>
+                </div>
+
+                <!-- Corporate Events -->
+                <div class="text-center">
+                    <h3 class="text-white font-serif text-2xl font-light mb-4">Corporate Events</h3>
+                    <p class="text-neutral-light leading-relaxed">
+                        Host business dinners, team celebrations, or client entertainment in our sophisticated private dining spaces with tailored menus.
+                    </p>
+                </div>
+
+                <!-- Birthday Celebrations -->
+                <div class="text-center">
+                    <h3 class="text-white font-serif text-2xl font-light mb-4">Birthday Celebrations</h3>
+                    <p class="text-neutral-light leading-relaxed">
+                        Make birthdays memorable with our personalized dining experiences, from intimate family gatherings to larger celebrations.
+                    </p>
+                </div>
+
+                <!-- Anniversary Dinners -->
+                <div class="text-center">
+                    <h3 class="text-white font-serif text-2xl font-light mb-4">Anniversary Dinners</h3>
+                    <p class="text-neutral-light leading-relaxed">
+                        Celebrate your love story with a romantic private dinner, featuring our finest Italian cuisine and exceptional service.
+                    </p>
+                </div>
+
+                <!-- Holiday Parties -->
+                <div class="text-center">
+                    <h3 class="text-white font-serif text-2xl font-light mb-4">Holiday Parties</h3>
+                    <p class="text-neutral-light leading-relaxed">
+                        Gather friends and family for festive holiday celebrations with seasonal Italian specialties and warm hospitality.
+                    </p>
+                </div>
+
+                <!-- Special Occasions -->
+                <div class="text-center">
+                    <h3 class="text-white font-serif text-2xl font-light mb-4">Special Occasions</h3>
+                    <p class="text-neutral-light leading-relaxed">
+                        From graduations to retirements, we create bespoke experiences for life's most important milestones and achievements.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Packages Section -->
+    <section class="py-20 lg:py-32 bg-background">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-accent text-sm font-medium tracking-widest mb-4 uppercase">Event Packages</p>
+                    <h2 class="text-foreground font-serif text-4xl lg:text-5xl font-light mb-6 leading-tight text-balance">
+                        Tailored Experiences
+                    </h2>
+                    <p class="text-muted max-w-2xl mx-auto leading-relaxed">
+                        Choose from our carefully crafted event packages or let us create a completely bespoke experience for your special occasion.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="border border-neutral-light/20 rounded-sm p-8">
+                        <h3 class="text-foreground font-serif text-2xl font-light mb-4">Intimate Dining</h3>
+                        <p class="text-muted mb-4">Perfect for 10-20 guests</p>
+                        <ul class="space-y-2 text-muted">
+                            <li>• Private dining room</li>
+                            <li>• Personalized menu selection</li>
+                            <li>• Dedicated service team</li>
+                            <li>• Wine pairing recommendations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border border-neutral-light/20 rounded-sm p-8">
+                        <h3 class="text-foreground font-serif text-2xl font-light mb-4">Grand Celebrations</h3>
+                        <p class="text-muted mb-4">Ideal for 20-60 guests</p>
+                        <ul class="space-y-2 text-muted">
+                            <li>• Exclusive restaurant hire</li>
+                            <li>• Custom menu development</li>
+                            <li>• Full event coordination</li>
+                            <li>• Premium wine selection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 lg:py-32 bg-neutral-dark">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-white font-serif text-4xl lg:text-5xl font-light mb-4 text-balance">
+                    Stay Connected
+                </h2>
+                <p class="text-neutral-light mb-8 leading-relaxed">
+                    Subscribe to our newsletter for exclusive offers, seasonal menu updates, and invitations to special
+                    events.
+                </p>
+
+                <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" placeholder="Enter your email" required
+                        class="flex-1 px-6 py-3 bg-background border border-neutral-light/20 rounded-sm text-foreground placeholder:text-muted focus:outline-none focus:border-accent transition-colors">
+                    <button type="submit"
+                        class="bg-accent text-background px-8 py-3 rounded-sm hover:bg-accent-hover transition-colors font-medium tracking-wide whitespace-nowrap">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white">
+        <div class="container mx-auto px-4 lg:px-8 py-12 lg:py-16">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-center gap-8 mb-8">
+                <!-- Logo -->
+                <div class="flex flex-col items-center text-wrap">
+                    <a href="index.html" class="font-serif text-3xl font-semibold tracking-wider">
+                        <img src="images/logo-ostuni.png" alt="Ostuni logo" class="h-28">
+                    </a>
+                    <p class="text-neutral-light text-sm mt-2 italic">A Legacy of Italian Excellence</p>
+                    <hr class="w-full border-neutral-light/10 my-4">
+                    <p class="text-neutral-light text-sm">277 Upper Richmond Rd</p>
+                    <p class="text-neutral-light text-sm">London, SW15 6SP</p>
+                    <p class="text-neutral-light text-sm mt-2 font-bold">020 8788 7733</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="w-3/5 md:w-auto">
+                    <!-- Mobile Accordion -->
+                    <div class="md:hidden ">
+                        <hr class="border-neutral-light/10 my-2 w-full">
+                        <button id="footer-accordion-toggle" class="flex items-center justify-between w-full text-neutral-light uppercase text-sm py-2">
+                            <span>Quick Links &nbsp;&nbsp;</span>
+                            <svg id="footer-accordion-icon" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <hr class="border-neutral-light/10 my-2 w-full">
+                        <div id="footer-accordion-content" class="hidden mt-2 text-center md:text-right space-y-2">
+                            <a href="index.html" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Home</a>
+                            <a href="about.html" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">About</a>
+                            <a href="menu.html" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Menu</a>
+                            <a href="events.html" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Private Events</a>
+                            <a href="contact.html" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Contact</a>
+                            <a href="reservations.html" class="block text-neutral-light hover:text-accent transition-colors text-sm py-1">Reservations</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Desktop Links -->
+                    <nav class="hidden md:flex flex-wrap flex-col text-right gap-x-8 gap-y-2">
+                        <p class="text-neutral-light uppercase text-sm">Quick Links</p>
+                        <a href="index.html" class="text-neutral-light hover:text-accent transition-colors text-sm">Home</a>
+                        <a href="about.html" class="text-neutral-light hover:text-accent transition-colors text-sm">About</a>
+                        <a href="menu.html" class="text-neutral-light hover:text-accent transition-colors text-sm">Menu</a>
+                        <a href="events.html" class="text-neutral-light hover:text-accent transition-colors text-sm">Private
+                            Events</a>
+                        <a href="contact.html"
+                            class="text-neutral-light hover:text-accent transition-colors text-sm">Contact</a>
+                        <a href="reservations.html"
+                            class="text-neutral-light hover:text-accent transition-colors text-sm">Reservations</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-neutral-light/10">
+            <div class="container mx-auto px-4 lg:px-8 py-4">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-neutral-light">
+                    <p>&copy; 2025 Ostuni Restaurant. All rights reserved.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-accent transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Fixed Reservations Button -->
+    <a href="reservations.html" class="mobile-reservations-btn md:hidden fixed bottom-0 left-0 right-0 p-4 md:relative md:p-0">
+        Book a Table
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
